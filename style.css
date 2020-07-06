@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+}
+
+.news-header {
+    border-bottom: 3px solid #000000;
+}
+
+.news-title {
+    font-family: "Snell Roundhand";
+    font-size: 60px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.section {
+    border-bottom: 3px solid #000000;
+    border-left: 1px solid #000000;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.story {
+    border-right: 1px solid #000000;
+    padding: 0 10px;
+}
+
+.story-quarter {
+    width: 25%;
+}
+
+.story-half {
+    width: 50%;
+}
+
+.artical-title {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+}
+
+.artical-img {
+    width: 100%;
+}
+
+.three-quarter {
+    width: 75%;
+}
+
+.other-sections {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.site-nav-politics {
+    background-color: #ffeaa7;
+}
+
+.site-nav-tech {
+    background-color: #81ecec;
+}
+
+.site-nav-local {
+    background-color: #55efc4;
+}
+
+.site-nav-opinion {
+    background-color: #74b9ff;
+}
+
+.site-nav-sports {
+    background-color: #a29bfe;
+}
+
+.nav-link {
+    color: #666666;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 850px) {
+
+    .section {
+        flex-wrap: wrap;
+    }
+
+    .story {
+        border-bottom: 1px solid #000000;
+    }
+
+    .story-quarter, .story-half, .three-quarter {
+        width: 100%;
+    }
+
+    .nav-link {
+        padding: 10px 0px 10px 30px;
+    }
+
+}
